@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-center">
+    <h1>Products</h1>
+    <div *ngFor="let product of products">
+        <app-product-card [product]="product" (showDetails)="navigateToDetails($event)"></app-product-card>
+    </div>
+</div>
