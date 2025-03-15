@@ -3,7 +3,7 @@
     <button class="btn btn-outline-dark" (click)="goBack()">Return to products</button>
     <div *ngIf="product" class="product-detail">
         <h1>{{ product.name }}</h1>
-        <img [src]="product.imageUrl || 'assets/default.jpg'" class="image-details" alt="{{ product.name }}">
+        <img [src]="product.imageUrl || 'assets/default.webp'" class="image-details" alt="{{ product.name }}">
         <p>{{ product.description }}</p>
         <p>{{ product.fullDescription }}</p>
         <h6>Author: {{ product.author }}</h6>
