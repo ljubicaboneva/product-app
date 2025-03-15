@@ -1,6 +1,9 @@
-<div class="d-flex justify-content-center">
-    <h1>Products</h1>
-    <div *ngFor="let product of products">
+<div class="container mt-4">
+    <h3 class="text-center mb-4">Products</h3>
+    <div class="row">
+    <div *ngFor="let product of products" class="col-md-3" >
         <app-product-card [product]="product" (showDetails)="navigateToDetails($event)"></app-product-card>
     </div>
 </div>
+</div>
+
