@@ -1,6 +1,9 @@
-<div class="card">
-    <h2>{{product?.name}}</h2>
-    <h3>{{product?.description}}</h3>
-    <h3>${{product?.price}}</h3>
-    <button (click)="viewDetails(product.id)">View Details</button>
+<div class="card shadow-sm h-100">
+    <img class="w-100 h-100" [src]="product.imageUrl || 'assets/default.jpg'" class="card-img-top fixed-image" alt="{{ product.name }}">
+    <div class="card-body">
+        <h2 class="card-title">{{product?.name}}</h2>
+        <p class="card-text">{{product?.description}}</p>
+        <p class="card-text">${{product?.price}}</p>
+    </div>
+    <button class="btn btn-outline-primary" (click)="viewDetails(product.id)">View Details</button>
 </div>
